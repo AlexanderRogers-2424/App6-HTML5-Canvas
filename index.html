@@ -60,7 +60,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     left: 0vw;
     z-index: 1;
 }
-	canvas { border: 2x solid black;
+	canvas { border: 2px solid black;
 			margin-top: 10px;
 		   }
 </style>
@@ -79,7 +79,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<canvas id="myCanvas" width="300" height="300"></canvas>
 	<br>
 		<!-- BUTTONS -->
-		<!Each button calls a Javascript function when clicked -->
+		<!-- Each button calls a Javascript function when clicked -->
 		<button onclick="drawRectangle()">Draw Rectangle</button>
 		<button onclick="drawName()">Draw Name</button>
 		<button onclick="drawImage()">Load Image</button>
@@ -91,7 +91,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 <script>
 	// Getting the canvas element from the HTML
-	var canvas = documnet.getElementById("myCanvas");
+	var canvas = document.getElementById("myCanvas");
 
 	// Get the drawing context (allows us to draw)
 	var ctx = canvas.getContext("2d");
@@ -111,7 +111,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		ctx.font = "20px Arial";
 
 		//Set text color
-		ctx.fillStyle = "black");
+		ctx.fillStyle = "black";
 
 		// Draw text - (text, x position, y position)
 		ctx.fillText("Alex Rogers", 60, 200);
@@ -127,7 +127,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 		//Once the image loads, draw it on the canvas
 		img.onload = function() {
-			ctx.drawImge(img, 75, 75);
+			ctx.drawImage(img, 75, 75);
 		};
 	}
 
